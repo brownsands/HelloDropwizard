@@ -1,0 +1,10 @@
+com\javaeeee\bean\Player.class
+com\javaeeee\bean\Game.class
+com\javaeeee\service\PlayerInterface.class
+com\javaeeee\service\PlayerOperation.class
+com\javaeeee\restcontroller\GameApplicationREST.class
+com\javaeeee\hellodropwizard\HelloDropWizardApplication.class
+com\javaeeee\service\GameOperation.class
+com\javaeeee\client\GameApplication.class
+com\javaeeee\hellodropwizard\HelloDropWizardConfiguration.class
+com\javaeeee\service\GameInterface.class
