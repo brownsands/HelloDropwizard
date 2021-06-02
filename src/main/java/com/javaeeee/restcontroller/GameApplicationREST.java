@@ -2,6 +2,8 @@ package com.javaeeee.restcontroller;
 
 import javax.ws.rs.Consumes;
 
+
+
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -12,6 +14,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.javaeeee.bean.Game;
+import com.javaeeee.dao.PlayerDaoOperation;
 import com.javaeeee.service.GameOperation;
 import com.javaeeee.service.PlayerOperation;
 
@@ -37,7 +40,8 @@ public  class GameApplicationREST
 	@Produces(MediaType.APPLICATION_JSON)
 	public String addPlayer(@QueryParam("name")String name , @QueryParam("Guess")int n )
 	{	
-		return po.addPlayer(name, n, g);
+		//PlayerDaoOperation p = new PlayerDaoOperation();
+		return po.addPlayer(name, n,g);
 	}
 	
 	@GET

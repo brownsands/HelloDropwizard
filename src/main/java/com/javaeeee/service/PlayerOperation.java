@@ -2,8 +2,11 @@ package com.javaeeee.service;
 
 import java.time.LocalTime;
 
+
+
 import com.javaeeee.bean.Game;
 import com.javaeeee.bean.Player;
+import com.javaeeee.dao.PlayerDaoOperation;
 
 public class PlayerOperation implements PlayerInterface
 {
@@ -17,13 +20,13 @@ public class PlayerOperation implements PlayerInterface
          if(v>0)
          {
              GameOperation go=new GameOperation();
-             if(game.getA().size()!=0)
+            // if(game.getA().size()!=0)
              go.CalculateResult(game);
              return "Winner of Game is:" + game.getWinner();
          }
          
-    	Player p = new Player(name,guess);
-        game.getA().add(p);
+         PlayerDaoOperation p = new PlayerDaoOperation();
+        p.addPlayer(name, guess);
         return "Thanks for Playing.";
     }
 }
