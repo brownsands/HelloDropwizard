@@ -120,8 +120,9 @@
     </dependencies>
   </dependencyManagement>
   <properties>
-    <dropwizard.version>2.1.0-beta.1</dropwizard.version>
+    <dropwizard.version>2.0.0</dropwizard.version>
     <mainClass>com.javaeeee.hellodropwizard.HelloDropWizardApplication</mainClass>
+    <version.commons-io>2.4</version.commons-io>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>

@@ -1,0 +1,19 @@
+server:
+  type: default
+  applicationContextPath: /twoByThree
+  adminContextPath: /admin
+  applicationConnectors:
+    - type: http
+      port: 9090
+      acceptQueueSize: 1024
+      acceptorThreads: 4
+      selectorThreads: 8
+  adminConnectors:
+    - type: http
+      port: 9091
+
+
+
+template: Hello, %s!
+defaultName: Stranger
+

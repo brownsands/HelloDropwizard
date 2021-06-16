@@ -7,6 +7,7 @@ import java.time.LocalTime;
 import com.javaeeee.bean.Game;
 import com.javaeeee.bean.Player;
 import com.javaeeee.dao.PlayerDaoOperation;
+import com.javaeeee.views.PlayerView;
 
 public class PlayerOperation implements PlayerInterface
 {
@@ -27,6 +28,6 @@ public class PlayerOperation implements PlayerInterface
          
          PlayerDaoOperation p = new PlayerDaoOperation();
         p.addPlayer(name, guess);
-        return "Thanks for Playing.";
+         return "Player added succesfully";
     }
 }
